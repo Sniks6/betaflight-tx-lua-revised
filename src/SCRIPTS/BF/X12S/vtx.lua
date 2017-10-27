@@ -10,12 +10,12 @@ return {
     minBytes       = 5,
     text = {},
     fields = {
-        { t = "Band",    x = 35,  y = 68, sp = 50, min=1, max=5, vals = { 2 }, to = SMLSIZE, table = { "A", "B", "E", "F", "R" }, upd = function(self) self.updateVTXFreq(self) end },
-        { t = "Channel", x = 35,  y = 96, sp = 50, min=1, max=8, vals = { 3 }, to = SMLSIZE, upd =  function(self) self.updateVTXFreq(self) end },
-        { t = "Power",   x = 35,  y = 124, sp = 50, min=1, vals = { 4 }, to = SMLSIZE, upd = function(self) self.updatePowerTable(self) end },
-        { t = "Pit",     x = 35,  y = 152, sp = 50, min=0, max=1, vals = { 5 }, to = SMLSIZE, table = { [0]="OFF", "ON" } },
-        { t = "Dev",     x = 240, y = 68, sp = 32, write = false, ro = true, vals = { 1 }, to = SMLSIZE, table = {[3]="SmartAudio",[4]="Tramp",[255]="None"} },
-        { t = "Freq",    x = 240, y = 96, sp = 32, min=5000, max=6000, to = SMLSIZE, ro=true },
+        { t = "Band",    x =  35,  y =  68, sp = 80, min=1, max=5, vals = { 2 }, to = SMLSIZE, table = { "A", "B", "E", "F", "R" }, upd = function(self) self.updateVTXFreq(self) end },
+        { t = "Channel", x =  35,  y =  96, sp = 80, min=1, max=8, vals = { 3 }, to = SMLSIZE, upd =  function(self) self.updateVTXFreq(self) end },
+        { t = "Power",   x =  35,  y = 124, sp = 80, min=1, vals = { 4 }, to = SMLSIZE, upd = function(self) self.updatePowerTable(self) end },
+        { t = "Pit",     x =  35,  y = 152, sp = 80, min=0, max=1, vals = { 5 }, to = SMLSIZE, table = { [0]="OFF", "ON" } },
+        { t = "Dev",     x = 240,  y =  68, sp = 52, write = false, ro = true, vals = { 1 }, to = SMLSIZE, table = {[3]="SmartAudio",[4]="Tramp",[255]="None"} },
+        { t = "Freq",    x = 240,  y =  96, sp = 52, min=5000, max=6000, to = SMLSIZE, ro=true },
     },
     freqLookup = {
         { 5865, 5845, 5825, 5805, 5785, 5765, 5745, 5725 }, -- Boscam A
