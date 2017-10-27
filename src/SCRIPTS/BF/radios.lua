@@ -14,7 +14,7 @@ supportedRadios =
     ["x12s"] = 
     {
         templateHome=SCRIPT_HOME.."/X12S/",
-        preLoad=SCRIPT_HOME.."/X12S/x9pre.lua"
+        preLoad=SCRIPT_HOME.."/X12S/x12spre.lua"
     },
     ["x12s-simu"] = 
     {
